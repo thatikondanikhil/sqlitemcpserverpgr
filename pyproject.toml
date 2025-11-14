@@ -1,12 +1,12 @@
 [project]
-name = "mcp_sqlite_server_nsdg"
-version = "0.1.0"
+name = "sqlitemcpserverpgr"
+version = "1.0.0"
 description = "A Python MCP server."
 readme = "README.md"
 requires-python = ">=3.9"
 
 [tool.mcp]
-name = "io.github.thatikondanikhil/my-mcp-server"
+name = "io.github.thatikondanikhil/sqlitemcpserverpgr"
 
 
 [build-system]
@@ -14,7 +14,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "mcp_sqlite_server_nsdg"
+name = "sqlitemcpserverpgr"
 version = "0.1.0"
 description = "A Model Context Protocol (MCP) server that provides sqlite tools"
 license = "MIT"
@@ -37,14 +37,14 @@ dependencies = [
 ]
 
 [project.urls]
-Repository = "https://github.com/thatikondanikhil/mcp-sqlite-server-nsdg.git"
+Repository = "https://github.com/thatikondanikhil/sqlitemcpserverpgr.git"
 
 [project.scripts]
-time-mcp-pypi = "mcp-sqlite-server-nsdg.main:main"
+time-mcp-pypi = "sqlitemcpserverpgr.main:main"
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["mcp-sqlite-server-nsdg*"]
+include = ["sqlitemcpserverpgr*"]
 
 [tool.setuptools.package-data]
-mcp-sqlite-server-nsdg = ["*.json"]
+sqlitemcpserverpgr = ["*.json"]
