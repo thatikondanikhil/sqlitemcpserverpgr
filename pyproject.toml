@@ -1,0 +1,50 @@
+[project]
+name = "mcp_sqlite_server_nsdg"
+version = "0.1.0"
+description = "A Python MCP server."
+readme = "README.md"
+requires-python = ">=3.9"
+
+[tool.mcp]
+name = "io.github.thatikondanikhil/my-mcp-server"
+
+
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mcp_sqlite_server_nsdg"
+version = "0.1.0"
+description = "A Model Context Protocol (MCP) server that provides sqlite tools"
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+keywords = ["mcp", "model-context-protocol", "time", "utc", "timestamp"]
+dependencies = [
+    "mcp==1.13.1",
+]
+
+[project.urls]
+Repository = "https://github.com/thatikondanikhil/mcp-sqlite-server-nsdg.git"
+
+[project.scripts]
+time-mcp-pypi = "mcp-sqlite-server-nsdg.main:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mcp-sqlite-server-nsdg*"]
+
+[tool.setuptools.package-data]
+mcp-sqlite-server-nsdg = ["*.json"]
