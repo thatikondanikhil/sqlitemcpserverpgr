@@ -4,6 +4,7 @@
   "title": "SQLite MCP Server",
   "description": "An MCP server that provides sqlite tools",
   "version": "1.0.0",
+
   "packages": [
     {
       "registryType": "pypi",
@@ -14,6 +15,7 @@
       }
     }
   ],
+
   "repository": {
     "source": "github",
     "url": "https://github.com/thatikondanikhil/sqlitemcpserverpgr"
